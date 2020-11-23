@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+.login{
+    width: 40%;
+}
+
+.login img{
+    margin-top: 3vh;
+    width: 5vh;
+}
+
+.input1{
+    border: none;
+    background-color: #eaeaea;
+    padding: 5px;
+    border-radius: 2px;
+    width: 80%;
+}
+
+.input1:focus{
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.input1::placeholder{
+    padding: 10%;
+}
+
+.botoes button{
+    width: 20%;
+    margin:0 5px;
+    box-sizing: border-box;
+}
+
+.botoes{
+    margin-left: 31px;
+}
+
+.b1, .b2, .b3{
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.b1{
+    background-color: blue;
+}
+
+.b2{
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
+    color: black;
+}
+
+.b3{
+    background-color: black
+}
+
+.b1:focus, .b2:focus, .b3:focus{
+    outline: none;
+}
+
+.checkbox + label{
+    color: gray;
+}
+
+.checkbox + label:hover{
+    color: black;
+    transition: 0.1s;
+}
+
+.check{
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.buttonLogar{
+    padding: 20px;
+    border-radius: 25%;
+    margin-top: 5rem;
+    color: #cecece;
+    border: 1px solid #cecece;
+}
+
+.buttonLogar:focus{
+    outline: none;
+}
+
+.final{
+    margin-top: 65px;
+}
+
+.final a{
+    text-transform: uppercase;
+}
+
+.final a:hover{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.final a{
+    color: gray;
+}
