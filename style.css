@@ -9,10 +9,6 @@
 
 }
 
-body{
-    overflow: hidden;
-}
-
 .main{
     display: flex;
     justify-content: space-between;
@@ -25,6 +21,8 @@ body{
 
 .login{
     width: 40%;
+    display: block;
+    
 }
 
 .login img{
@@ -53,7 +51,7 @@ body{
 }
 
 .botoes button{
-    width: 20%;
+    width: 28%;
     margin:0 5px;
     box-sizing: border-box;
 }
@@ -113,7 +111,8 @@ body{
 }
 
 .final{
-    margin-top: 65px;
+    position: relative;
+    top: 10%;
 }
 
 .final a{
@@ -128,4 +127,19 @@ body{
 
 .final a{
     color: gray;
+}
+
+@media (max-width: 1280px){
+    .main{
+        display: initial;
+    }
+
+    .login{
+        width: 100%;
+    }
+
+    .imagem img{
+        display: none;
+    }    
+
 }
