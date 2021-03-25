@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 
 }
 
 .main{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #f9f9f9;
@@ -33,13 +33,20 @@
 .input1{
     border: none;
     background-color: #eaeaea;
-    padding: 5px;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 80%;
+    padding: 15px;
+    font-size: 15px;
 }
 
+.input1:hover{
+    background-color: #d9d9d9;
+    transition: 0.5s;
+}
+
+
 .input1:focus{
-    border: 1px solid black;
+    border: 3px solid #1d1d1d;
     outline: none;
     text-decoration: none;
     background-color: white;
@@ -47,27 +54,45 @@
 }
 
 .input1::placeholder{
-    padding: 10%;
+    padding: 5%;
+    color: #1d1d1d;
+}
+
+.input1:hover::placeholder{
+    color: black;
+}
+
+.input1:focus::placeholder{
+    font-size: 12px;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1%;
 }
 
 .botoes button{
-    width: 28%;
-    margin:0 5px;
+    width: 20%;
+    height: 40px;
+    padding: 0 65px;
+    margin: 0 10px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
 .botoes{
-    margin-left: 31px;
+    text-align: center;
 }
 
 .b1, .b2, .b3{
     color: white;
     outline: none;
+    
     border: none;
 }
 
 .b1{
-    background-color: blue;
+    background-color:#0077ff;
 }
 
 .b2{
@@ -94,15 +119,16 @@
 }
 
 .check{
-    margin-left: 35px;
-    margin-top: 5px;
+    margin-left: 55px;
+    margin-top: 10px;
 }
 
 .buttonLogar{
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 25%;
     margin-top: 5rem;
     color: #cecece;
+    background-color: #f9f9f9;
     border: 1px solid #cecece;
 }
 
@@ -111,8 +137,8 @@
 }
 
 .final{
-    position: relative;
-    top: 10%;
+    text-align: center;
+    margin-top: 10vh;
 }
 
 .final a{
